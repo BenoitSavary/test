@@ -16,14 +16,14 @@ int main(){
 
     pf tabP[3];
     tabP[0]=&message1; tabP[1]=&message2; tabP[2]=&message3;
-    cout << "Entrée un nombre de fonction" << endl;
+    cout << "Entree un nombre de fonction" << endl;
     cin >> nombre;
 
     mess = new pf[nombre];
 
     for(int i=0; i < nombre; i++){
         int ii;
-        cout << "Choissisez l'indice de la première fonction" << nombre << endl;
+        cout << "Choissisez l'indice de la fonction numero " << i << endl;
         cin >> ii;
         mess[i] = tabP[ii];
     }
@@ -39,9 +39,9 @@ void message1(void)
 }
 
 void message2(void){
-    cout << "M2" + 1 << endl;
+    cout << "M2" << endl;
 }
 
 void message3(void){
-    cout << "M3" + 2 << endl;
+    cout << "M3" << endl;
 }
